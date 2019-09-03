@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Kirill Bugaev](https://up.htmlacademy.ru/htmlcss/26/user/244468).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Антонов](https://htmlacademy.ru/profile/rawle51).
 
 ---
 
