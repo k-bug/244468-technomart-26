@@ -7,12 +7,16 @@
   <body>
     <header>
       <section>
-        <a href="index.html"><img src="img/logo.png" alt="Логотип магазина «Техномарт»"></a>
-        <!--Здесь будет форма поиска-->
+        <a class="visually-hidden" href="index.html"><img src="img/logo.png" alt="Логотип магазина «Техномарт»">Техномарт</a>
+        <!--Форма поиска-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input id="search" type="search" name="search" value="Поиск" placeholder="Поик:">
+        </form>
         <ul>
           <li><a href="">Закладки: <span>0</span></a></li>
           <li><a href="">Корзина: <span>0</span></a></li>
-          <li><a href="">Оформить заказ</a></li>
+          <li><a href="make-order.html">Оформить заказ</a></li>
         </ul>
       </section>
       <section>
@@ -29,10 +33,10 @@
         </p>
         <ul>
           <li>
-            <a href="#">Войти</a>
+            <a href="login.html">Войти</a>
           </li>
           <li>
-            <a href="#">Регистрация</a>
+            <a href="signup.html">Регистрация</a>
           </li>
         </ul>
       </section>
@@ -80,13 +84,13 @@
             <p>Дрели<span>Соседям на радость!</span></p>
             <button type="button">Назад</button>
             <button type="button">Вперёд</button>
-            <a href="">Открыть каталог</a>
+            <a href="technomart-catalog.html">Открыть каталог</a>
           </div>
           <div>
             <p>Перфораторы<span>Настоящие мужские игрушки</span></p>
             <button type="button">Назад</button>
             <button type="button">Вперёд</button>
-            <a href="">Открыть каталог</a>
+            <a href="technomart-catalog.html">Открыть каталог</a>
           </div>
           <!--Это точки слайдера для переключения-->
           <button type="button">Первый промо</button>
@@ -95,7 +99,7 @@
       </section>
       <section>
         <h2>Популярные товары</h2>
-        <a href="">Все популярные товары</a>
+        <a href="populat.html">Все популярные товары</a>
         <ul>
           <li>
             <h3>
@@ -263,14 +267,38 @@
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p>
-          Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+          Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </footer>
     <!--Поп-ап карты-->
     <div>
-      <img src="map-big.png" alt="Карта с адресом компании «Техномарт» на карте: улица Б. Конюшенная, дом 19">
-      <button type="button">Закрыть</button>
+      <img src="img/map-big.png" alt="Карта с адресом компании «Техномарт» на карте: улица Б. Конюшенная, дом 19">
+      <button class="visually-hidden" type="button" value="Закрыть">Закрыть</button>
+      <!--В задании указано:
+        Добавьте подписи ко всем интерактивным элементам: лейблы к полям форм,
+        текст в кнопки и ссылки. Отметьте те подписи, которых нет на макете,
+        классом visually-hidden.
+
+        Как можно здесь спрятать слово Закрыть?
+        Или value в этом случае и отвечает за скрытое состояние и само слово внутри тега можно удалить?
+      -->
     </div>
+    <!--Поа-ап обратной связи-->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label for="email">Ваш e-mail</label>
+        <input id="email" type="email" name="email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label for="message">Текст письма:</label>
+        <textarea id="message" name="name" rows="6" cols="60">В свободной форме</textarea required>
+      </p>
+      <button type="button" name="button" value="Отправить">Отправить</button>
+    </form>
   </body>
 </html>

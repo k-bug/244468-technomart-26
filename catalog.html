@@ -7,8 +7,12 @@
   <body>
     <header>
       <section>
-        <a href="index.html"><img src="img/logo.png" alt="Логотип магазина «Техномарт»"></a>
-        <!--Здесь будет форма поиска-->
+        <a class="visually-hidden" href="index.html"><img src="img/logo.png" alt="Логотип магазина «Техномарт»">Техномарт</a>
+        <!--Форма поиска-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input id="search" type="search" name="search" value="Поиск" placeholder="Поик:">
+        </form>
         <ul>
           <li><a href="">Закладки: <span>0</span></a></li>
           <li><a href="">Корзина: <span>0</span></a></li>
@@ -28,8 +32,8 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
         <div>
-          Равшан Джамшутович
-          <a href="#">Выйти</a>
+          <a href="profile.html">Равшан Джамшутович</a>
+          <a href="logout.html">Выйти</a>
         </div>
         <ul>
           <li>
@@ -60,13 +64,71 @@
         <li>Перфораторы</li>
       </ul>
       <h1>Перфораторы</h1>
-      <!--Здесь будет фильтр-->
+      <!--Фильтр-->
+      <div>
+        <!--Двойной ползунок-->
+        <!--Как сделать такой двойной ползунок? Вадим в лекцим упоянул это,
+        но я так и не понял, посмотрел пару статей там используется JS-->
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="BOSCH" checked>
+                BOSCH
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Интерскол">
+                Интерскол
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Makita" checked>
+                Makita
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="DeWALT">
+                DeWALT
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Hitachi">
+                Hitachi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="batary" checked>
+                Аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="power">
+                Сетевые
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="button">Показать</button>
+      </div>
       <div>
         <p>Сортировка:</p>
         <ul>
           <li>По цене</li>
           <li>По типу</li>
-          <li></li>
+          <li>По функционалу</li>
           <li>По возростанию</li>
           <li>По убыванию</li>
         </ul>
@@ -266,9 +328,16 @@
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p>
-          Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+          Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </footer>
+    <!--Поп-ап «Товар добавлен в корзину!»-->
+    <div>
+      <p>Товар добавлен в корзину!</p>
+      <button type="button">Оформить заказ</button>
+      <button type="button">Продолжить покупки</button>
+      <button type="button">Закрыть </button>
+    </div>
   </body>
 </html>
