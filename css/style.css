@@ -1,0 +1,33 @@
+body {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+  width: 121px;
+  height: 45px;
+  color: #000000;
+}
+
+header {
+  background-color: #f3f7f9;
+}
+
+.button {
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+}

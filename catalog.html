@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт. Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <header>
@@ -65,10 +68,14 @@
       </ul>
       <h1>Перфораторы</h1>
       <!--Фильтр-->
-      <div>
+      <form>
         <!--Двойной ползунок-->
-        <!--Как сделать такой двойной ползунок? Вадим в лекцим упоянул это,
-        но я так и не понял, посмотрел пару статей там используется JS-->
+        <div class="line">
+          <div class="circle">
+          </div>
+          <div class="circle">
+          </div>
+        </div>
         <fieldset>
           <legend>Производители:</legend>
           <ul>
@@ -122,7 +129,7 @@
           </ul>
         </fieldset>
         <button type="button">Показать</button>
-      </div>
+      </form>
       <div>
         <p>Сортировка:</p>
         <ul>
