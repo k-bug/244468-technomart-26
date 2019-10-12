@@ -32,6 +32,21 @@ header {
   /* display: flex; */
 }
 
+h1,
+h2 {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: #32425c;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+}
+
+.list-unstyle {
+  padding: 0;
+}
+
 .top-header > li > a {
   font-size: 17px;
   font-family: "Cuprum";
@@ -64,10 +79,11 @@ header {
   opacity: 0.3;
 }
 
-/* .header-button::before {
+.login-button::before {
   content: "";
 
   position: absolute;
+  display: block;
   top: 20px;
   left: 20px;
   width: 20px;
@@ -76,13 +92,33 @@ header {
   background-image: url("img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-} */
+  background-size: contain;
+
+}
 
 .telephone {
   font-size: 21px;
   font-family: "Cuprum";
   color: #ee3643;
   line-height: 1;
+  border: 3px solid #ffffff;
+  padding: 12px 50px;
+}
+
+.telephone::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 20px;
+  width: 19px;
+  height: 19px;
+
+  background-image: url("img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
 }
 
 .header-adress {
@@ -142,17 +178,6 @@ header {
   background-color: #293449;
 }
 
-h1,
-h2 {
-  font-size: 30px;
-  font-family: "Cuprum";
-  color: #32425c;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1;
-  text-align: left;
-}
-
 .services-heading {
   font-size: 30px;
   font-family: "Cuprum";
@@ -176,11 +201,6 @@ h2 {
   background-color: #000000;
   opacity: 0.3;
 }
-
-/* .offers-card  > a {
-  background-color: #000000;
-  opacity: 0.3;
-} */
 
 .offers-card > a {
   font-size: 14px;
@@ -237,6 +257,7 @@ h2 {
   font-weight: bold;
   text-align: center;
 
+  background-color: #ffffff;
   border: 1px solid #ccc;
 }
 
@@ -267,6 +288,7 @@ h2 {
 }
 
 .new-price {
+  position: relative;
   font-size: 17px;
   font-family: "PT Sans";
   font-weight: bold;
@@ -377,11 +399,6 @@ h2 {
 
 } */
 
-
-.popular {
-  width: 940px;
-}
-
 .brands-list {
   display: flex;
   flex-wrap: wrap;
@@ -412,6 +429,70 @@ h2 {
 
 .brands:active {
 
+}
+
+.tool-name {
+  display: inline-block;
+
+  font-size: 18px;
+  font-family: "PT Sans";
+  line-height: 20px;
+  color: #000000;
+  font-weight: 700;
+
+  width: 160px;
+}
+
+/* .new-price:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 20px solid white;
+  border-left-color: #ee3643;
+} */
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background: url("img/new-flag.png") no-repeat 0 0;
+}
+
+.logo {
+  display: inline-block;
+  /* position: absolute; */
+  background-color: #ee3643;
+  width: 220px;
+  height: 42px;
+  border-bottom: 5px solid #b52933;
+}
+
+.logo img {
+  display: inline-block;
+  position: absolute;
+  padding: 13px 55px 11px 55px;
+}
+
+.make-order {
+  display: inline-block;
+  background-color: #63a63e;
+  padding: 14px 21px;
 }
 
 .visually-hidden {
