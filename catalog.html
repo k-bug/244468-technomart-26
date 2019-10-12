@@ -2,10 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Техномарт. Главная</title>
+    <title>Техномарт. Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -23,16 +23,16 @@
         </ul>
       </section>
       <section>
-      <p>
-        Интернет-магазин
-        строительных материалов
-        и инструментов для ремонта
+      <p class="store-description">
+        Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
       </p>
       <p>
         <span>
           +7 (812) 555-05-55
         </span>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <p class="header-adress">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
       </p>
         <div>
           <a href="profile.html">Равшан Джамшутович</a>
@@ -49,13 +49,13 @@
       </section>
       <nav>
         <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="special-offer.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="menu-link" href="index.html">Главная</a></li>
+          <li><a class="menu-link" href="about.html">Компания</a></li>
+          <li><a class="menu-link" href="catalog.html">Каталог</a></li>
+          <li><a class="menu-link" href="news.html">Новости</a></li>
+          <li><a class="menu-link" href="special-offer.html">Спецпредложения</a></li>
+          <li><a class="menu-link" href="delivery.html">Доставка</a></li>
+          <li><a class="menu-link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -295,8 +295,8 @@
           <button type="button">Следущая</button> <!--Прредположу, что JS будет перехватывать нажатие этой кнопки и открывать нужную ссылку-->
         </div>
       </section>
-      <section>
-        <h3>Пара слов о перфораторах</h3>
+      <section class="about about-puncher">
+        <h3 class="services-heading">Пара слов о перфораторах</h3>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
@@ -305,42 +305,44 @@
       <div>
         <a href="index.html"><img src="img/logo.png" alt="Логотип магазина «Техномарт»"></a>
         <ul>
-          <li><a href="about.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="menu-link" href="about.html">Компания</a></li>
+          <li><a class="menu-link" href="news.html">Новости</a></li>
+          <li><a class="menu-link" href="catalog.html">Каталог</a></li>
+          <li><a class="menu-link" href="delivery.html">Доставка</a></li>
+          <li><a class="menu-link" href="contacts.html">Контакты</a></li>
         </ul>
       </div>
       <div>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <span>+7 (812) 555-05-55</span>
+        <div class="footer-adress">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <span>+7 (812) 555-05-55</span>
+        </div>
         <ul>
-          <li><a href="materials.html">Материалы</a></li>
-          <li><a href="technique.html">Техника</a></li>
-          <li><a href="toolse.html">Инструмент</a></li>
-          <li><a href="special-offer.html">Спецпредложения</a></li>
+          <li><a class="footer-offers" href="materials.html">Материалы</a></li>
+          <li><a class="footer-offers" href="technique.html">Техника</a></li>
+          <li><a class="footer-offers" href="toolse.html">Инструмент</a></li>
+          <li><a class="footer-offers" href="special-offer.html">Спецпредложения</a></li>
         </ul>
       </div>
       <div>
-        <p>© 2010-2017 Компания «Техномарт» Все права защищены
+        <p class="rights">© 2010-2017 Компания «Техномарт» Все права защищены
         </p>
         <ul>
-          <li><a href="">Вконтакте</a></li>
-          <li><a href="">Фейсбук</a></li>
-          <li><a href="">Инстаграм</a></li>
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграм</a></li>
         </ul>
-        <p>
+        <p class="developer">
           Обратная связь:
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p>
+        <p class="developer">
           Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </footer>
     <!--Поп-ап «Товар добавлен в корзину!»-->
-    <div>
+    <div class="visually-hidden">
       <p>Товар добавлен в корзину!</p>
       <button type="button">Оформить заказ</button>
       <button type="button">Продолжить покупки</button>
