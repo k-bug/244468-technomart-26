@@ -15,7 +15,7 @@
           <!--Форма поиска-->
           <form class="form-flex" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="search">Поиск</label>
-            <input id="search" type="search" name="search" value="Поиск:" placeholder="Поиск:">
+            <input id="search" type="search" name="search" placeholder="Поиск:">
           </form>
           <ul class="purchase-options list-unstyle">
             <li><a class="bookmarks" href="#">Закладки: 0</a></li>
@@ -79,7 +79,9 @@
                 <a href="#">Для стройки</a>
               </div>
             </li>
+            <li class="pseudo-slider">
 
+            </li>
             <li>
               <div class="offers-card discount">
                 <p>Скидка 50%</p>
@@ -92,28 +94,23 @@
                 <a href="#">Бесплатно</a>
               </div>
             </li>
-            <li>
+
+            <!-- <li>
               <div class="slider-wrapper">
                 <div class="slider">
                   <div class="slider-item first-slider">
-                    <p><span>Дрели</span> Соседям на радость!</p>
-                    <!-- <button class="button-back" type="button" aria-label="Назад"></button>
-                    <button class="button-forward" type="button" aria-label="Вперёд"></button> -->
+                    <p><span>Дрели</span><br>Соседям на радость!</p>
                     <a class="button slider-button" href="catalog.html">Открыть каталог</a>
                   </div>
-                  <!-- <div class="slider-item second-slider">
-                    <p>Перфораторы<span>Настоящие мужские игрушки</span></p>
-                    <button type="button">Назад</button>
-                    <button type="button">Вперёд</button>
-                    <a class="button" href="catalog.html">Открыть каталог</a>
-                  </div> -->
+                  <div class="slider-item second-slider">
+                    <p><span>Перфораторы</span><br>Настоящие мужские игрушки</p>
+                    <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+                  </div>
                   <button class="button-back" type="button" aria-label="Назад"></button>
                   <button class="button-forward" type="button" aria-label="Вперёд"></button>
-                  <!-- <button type="button">Первый промо</button>
-                  <button type="button">Второй промо</button> -->
                 </div>
               </div>
-              </li>
+              </li> -->
           </ul>
           <!-- <div class="slider">
             <div>
@@ -139,6 +136,9 @@
           </div>
           <ul class="list-unstyle popular">
             <li class="catalog-item">
+              <div class="flag flag-new not-visible">
+                new
+              </div>
               <p class="paragraf-unstyle">
                 <a href="#">
                   <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
@@ -157,6 +157,9 @@
               </div>
             </li>
             <li class="catalog-item">
+              <div class="flag flag-new not-visible">
+                new
+              </div>
               <p class="paragraf-unstyle">
                 <a href="#">
                   <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -175,6 +178,9 @@
               </div>
             </li>
             <li class="catalog-item">
+              <div class="flag flag-new not-visible">
+                new
+              </div>
               <p class="paragraf-unstyle">
                 <a href="#">
                   <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -251,18 +257,20 @@
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
             </div>
-            <!-- <div class="services-content">
+            <div class="services-content services-garantie">
               <h3 class="services-heading">Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              <p>Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгоранием,<br>
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+              сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.</p>
-            </div> -->
-            <!-- <div class="services-content">
+            </div>
+            <div class="services-content services-credit">
               <h3 class="services-heading">Кредит</h3>
-              <p>Залезть в долговую яму стало проще!
+              <p>Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь</p>
-              <a href="#">Отправить заявку</a>
-            </div> -->
+              <a class="button" href="#">Отправить заявку</a>
+            </div>
           </div>
         </section>
       </div>
