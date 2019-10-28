@@ -144,59 +144,66 @@
                   <div class="digit">30000</div>
                 </div>
               </div>
-              <fieldset>
+              <fieldset class="filter-form">
                 <legend>Производители:</legend>
                 <ul>
                   <li>
-                    <label>
-                      <input type="checkbox" name="BOSCH" checked>
+                    <label class="check">
+                      <input class="check-input" type="checkbox" name="BOSCH" checked>
+                      <span class="check-box"></span>
                       BOSCH
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="Интерскол">
+                    <label class="check">
+                      <input class="check-input" type="checkbox" name="Интерскол">
+                      <span class="check-box"></span>
                       Интерскол
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="Makita" checked>
+                    <label class="check">
+                      <input class="check-input" type="checkbox" name="Makita" checked>
+                      <span class="check-box"></span>
                       Makita
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="DeWALT">
+                    <label class="check">
+                      <input class="check-input" type="checkbox" name="DeWALT">
+                      <span class="check-box"></span>
                       DeWALT
                     </label>
                   </li>
                   <li>
-                    <label>
-                      <input type="checkbox" name="Hitachi">
+                    <label class="check">
+                      <input class="check-input" type="checkbox" name="Hitachi">
+                      <span class="check-box"></span>
                       Hitachi
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-form">
                 <legend>Питание</legend>
                 <ul>
                   <li>
                     <label>
-                      <input type="radio" name="batary" checked>
+                      <input type="radio" name="power" value="batary" checked>
+                      <span class="radiobutton"></span>
                       Аккумуляторные
                     </label>
                   </li>
                   <li>
                     <label>
-                      <input type="radio" name="power">
+                      <input type="radio" name="power" value="power">
+                      <span class="radiobutton"></span>
                       Сетевые
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <button type="button">Показать</button>
+              <button class="paginator-button next-page" type="button">Показать</button>
             </form>
           </div>
           <div class="right-column">
