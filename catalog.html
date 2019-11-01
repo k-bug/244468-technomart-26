@@ -3,118 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт. Каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-      <header>
-          <section class="menu-wrapper">
-            <div class="top-header">
-              <a class="logo" href="index.html"><img src="img/logo.png" width="109" height="19" alt="Логотип магазина «Техномарт»"><span class="visually-hidden">Техномарт</span></a>
-              <!--Форма поиска-->
-              <form class="form-flex" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="search">Поиск</label>
-                <input class="form-input" id="search" type="text" name="search" placeholder="Поиск:">
-              </form>
-              <ul class="purchase-options list-unstyle">
-                <li><a class="bookmarks" href="#">Закладки: 0</a></li>
-                <li><a class="cart cart-storred" href="#">Корзина: 10</a></li>
-                <li><a class="make-order" href="#">Оформить заказ</a></li>
+    <header class="header">
+      <section class="menu-wrapper">
+        <div class="top-header">
+          <a class="logo" href="index.html"><img src="img/logo.png" width="109" height="19" alt="Логотип магазина «Техномарт»"><span class="visually-hidden">Техномарт</span></a>
+          <form class="form-flex" action="https://echo.htmlacademy.ru" method="post">
+            <div class="search-wrapper">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input id="search" type="text" name="search" placeholder="Поиск:">
+            </div>
+          </form>
+          <ul class="purchase-options list-unstyle">
+            <li><a class="bookmarks-catalog" href="#">Закладки: 0</a></li>
+            <li><a class="cart-catalog" href="#">Корзина: 10</a></li>
+            <li><a class="make-order" href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="middle-header">
+          <div class="header-info">
+            <p class="store-description">
+              Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
+            </p>
+            <div class="header-contacts in-catalog">
+              <span class="telephone">
+                +7 (812) 555-05-55
+              </span>
+              <p class="header-adress">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </p>
+            </div>
+            <div class="profile">
+              <div class="personal-data">
+                <p>Равшан Джамшутович</p>
+                <a class="log-out" href="#" aria-label="Выйти"></a>
+              </div>
+              <ul class="ilst-unstyle profile-links">
+                <li>
+                  <a class="profile-dot" href="#">Мои заказы</a>
+                </li>
+                <li>
+                  <a href="#">Личный кабинет</a>
+                </li>
               </ul>
             </div>
-          </section>
-          <section class="middle-header">
-            <div class="header-info">
-              <p class="store-description">
-                Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
-              </p>
-              <div class="header-contacts">
-                <span class="telephone">
-                  +7 (812) 555-05-55
-                </span>
-                <p class="header-adress">
-                  г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                </p>
-              </div>
-              <div class="profile">
-                <div class="personal-data">
-                  <p>Равшан Джамшутович</p>
-                  <a class="log-out" href="#" aria-label="Выйти"></span></a>
-                </div>
-                <ul class="ilst-unstyle profile-links">
-                  <li>
-                    <a class="profile-dot" href="#">Мои заказы</a>
-                  </li>
-                  <li>
-                    <a href="#">Личный кабинет</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <nav class="main-navigation">
-            <ul class="main-menu">
-              <li><a class="menu-link" href="index.html">Главная</a></li>
-              <li><a class="menu-link" href="#">Компания</a></li>
-              <li><a class="menu-link" href="catalog.html">Каталог</a></li>
-              <li><a class="menu-link" href="#">Новости</a></li>
-              <li><a class="menu-link" href="#">Спецпредложения</a></li>
-              <li><a class="menu-link" href="#">Доставка</a></li>
-              <li><a class="menu-link" href="#">Контакты</a></li>
-            </ul>
-          </nav>
-        </header>
-    <!-- <header>
-      <section>
-        <a class="visually-hidden" href="index.html"><img src="img/logo.png" alt="Логотип магазина «Техномарт»">Техномарт</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search">Поиск</label>
-          <input id="search" type="search" name="search" value="Поиск" placeholder="Поик:">
-        </form>
-        <ul>
-          <li><a href="">Закладки: <span>0</span></a></li>
-          <li><a href="">Корзина: <span>0</span></a></li>
-          <li><a href="">Оформить заказ</a></li>
-        </ul>
-      </section>
-      <section>
-      <p class="store-description">
-        Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
-      </p>
-      <p>
-        <span>
-          +7 (812) 555-05-55
-        </span>
-        <p class="header-adress">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
-      </p>
-        <div>
-          <a href="profile.html">Равшан Джамшутович</a>
-          <a href="logout.html">Выйти</a>
-        </div>
-        <ul>
-          <li>
-            <a href="#">Мои заказы</a>
-          </li>
-          <li>
-            <a href="#">Личный кабинет</a>
-          </li>
-        </ul>
-      </section>
-      <nav>
-        <ul>
+          </div>
+        </section>
+      <nav class="main-navigation">
+        <ul class="main-menu">
           <li><a class="menu-link" href="index.html">Главная</a></li>
-          <li><a class="menu-link" href="about.html">Компания</a></li>
+          <li><a class="menu-link" href="#">Компания</a></li>
           <li><a class="menu-link" href="catalog.html">Каталог</a></li>
-          <li><a class="menu-link" href="news.html">Новости</a></li>
-          <li><a class="menu-link" href="special-offer.html">Спецпредложения</a></li>
-          <li><a class="menu-link" href="delivery.html">Доставка</a></li>
-          <li><a class="menu-link" href="contacts.html">Контакты</a></li>
+          <li><a class="menu-link" href="#">Новости</a></li>
+          <li><a class="menu-link" href="#">Спецпредложения</a></li>
+          <li><a class="menu-link" href="#">Доставка</a></li>
+          <li><a class="menu-link" href="#">Контакты</a></li>
         </ul>
       </nav>
-    </header> -->
+    </header>
     <main>
       <div class="main-content">
         <ul class="list-unstyle breadcrumbs">
@@ -183,7 +134,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-form">
+              <fieldset class="filter-form power-filter">
                 <legend>Питание</legend>
                 <ul>
                   <li>
@@ -202,7 +153,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="paginator-button next-page" type="button">Показать</button>
+              <button class="paginator-button show-button" type="button">Показать</button>
             </form>
           </div>
           <div class="right-column">
@@ -271,12 +222,12 @@
                     <a href="#">
                       <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                     </a>
-                    <h3>
-                      <a class="tool-name" href="#">
-                        Перфоратор BOSCH BFG 2000
-                      </a>
-                    </h3>
                   </p>
+                  <h3>
+                    <a class="tool-name no-discount" href="#">
+                      Перфоратор BOSCH BFG 2000
+                    </a>
+                  </h3>
                   <p class="new-price">12500 Р.</p>
                   <div class="actions">
                     <button class="buy" type="button">Купить</button>
@@ -333,12 +284,12 @@
                     <a href="#">
                       <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                     </a>
-                    <h3>
-                      <a class="tool-name" href="#">
-                        Перфоратор BOSCH BFG 2000
-                      </a>
-                    </h3>
                   </p>
+                  <h3>
+                    <a class="tool-name no-discount" href="#">
+                      Перфоратор BOSCH BFG 2000
+                    </a>
+                  </h3>
                   <p class="new-price">12500 Р.</p>
                   <div class="actions">
                     <button class="buy" type="button">Купить</button>
@@ -395,12 +346,12 @@
                     <a href="#">
                       <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                     </a>
-                    <h3>
-                      <a class="tool-name" href="#">
-                        Перфоратор BOSCH BFG 2000
-                      </a>
-                    </h3>
                   </p>
+                  <h3>
+                    <a class="tool-name no-discount" href="#">
+                      Перфоратор BOSCH BFG 2000
+                    </a>
+                  </h3>
                   <p class="new-price">12500 Р.</p>
                   <div class="actions">
                     <button class="buy" type="button">Купить</button>
@@ -414,7 +365,7 @@
                   <li><a class="paginator-button" href="#">2</a></li>
                   <li><a class="paginator-button" href="#">3</a></li>
                 </ul>
-                <button class="paginator-button next-page" type="button">Следущая</button> <!--Прредположу, что JS будет перехватывать нажатие этой кнопки и открывать нужную ссылку-->
+                <button class="paginator-button next-page" type="button">Следующая</button> <!--Прредположу, что JS будет перехватывать нажатие этой кнопки и открывать нужную ссылку-->
               </div>
             </section>
           </div>
@@ -432,7 +383,7 @@
         <div class="upper-footer">
           <div class="footer-wrapper">
             <div class="footer-between">
-              <a class="footer-logo" href="index.html"><img src="img/logo.png"  width="109" height="19" alt="Логотип магазина «Техномарт»"></a>
+              <a class="footer-logo" href="index.html"><img src="img/logo.png"  width="136" height="21" alt="Логотип магазина «Техномарт»"></a>
               <ul class="list-unstyle footer-menu">
                 <li class="footer-link"><a href="#">Компания</a></li>
                 <li class="footer-link"><a href="#">Новости</a></li>
@@ -478,7 +429,7 @@
           </div>
         </div>
       </footer>
-    <div class="popup cart-popup">
+    <div class="popup cart-popup visually-hidden">
       <p>Товар добавлен в корзину!</p>
       <div class="popup-buttons">
         <button class="button" type="button">Оформить заказ</button>
