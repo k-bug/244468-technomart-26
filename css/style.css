@@ -1326,7 +1326,8 @@ display: flex;
   line-height: 18px;
   color: #ffffff;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .bookmarks::before {
@@ -1366,9 +1367,6 @@ display: flex;
   display: block;
   width: 150px;
   background-color: transparent;
-  /* padding: 12px 21px; */
-  /* padding-left: 43px; */
-  /* padding-right: 27px; */
   padding-top: 12px;
   padding-bottom: 12px;
   margin: 0;
@@ -1424,7 +1422,8 @@ display: flex;
   line-height: 18px;
   color: #ffffff;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cart-catalog {
