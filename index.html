@@ -5,13 +5,15 @@
     <title>Техномарт. Главная</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
   </head>
   <body>
     <header class="page-header header">
       <section class="menu-wrapper">
         <div class="top-header">
-          <a class="logo" href="index.html"><img src="img/logo.png" width="109" height="19" alt="Логотип магазина «Техномарт»"><span class="visually-hidden">Техномарт</span></a>
+          <a class="logo" href="#"><img src="img/logo.png" width="109" height="19" alt="Логотип магазина «Техномарт»"><span class="visually-hidden">Техномарт</span></a>
           <form class="form-flex" action="https://echo.htmlacademy.ru" method="post">
             <div class="search-wrapper">
               <label class="visually-hidden" for="search">Поиск</label>
@@ -32,7 +34,7 @@
           </p>
           <div class="header-contacts">
             <span class="telephone">
-              +7 (812) 555-05-55
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             </span>
             <p class="header-adress">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -95,11 +97,17 @@
           </ul>
           <div class="slider">
             <div class="slider-item first-slider">
-              <p><span>Дрели</span><br>Соседям на радость!</p>
+              <div class="wow">
+                <p class="slider-header">Дрели</p>
+                <p>Соседям на радость!</p>
+              </div>
               <a class="button slider-button" href="catalog.html">Открыть каталог</a>
             </div>
             <div class="slider-item second-slider visually-hidden">
-              <p><span>Перфораторы</span><br>Настоящие мужские игрушки</p>
+              <div class="wow">
+                <p class="slider-header">Перфораторы</p>
+                <p>Настоящие мужские игрушки</p>
+              </div>
               <a class="button slider-button" href="catalog.html">Открыть каталог</a>
             </div>
             <button class="button-back" type="button" aria-label="Назад"></button>
@@ -118,7 +126,7 @@
               </div>
               <p class="paragraf-unstyle">
                 <a href="#">
-                  <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+                  <img src="img/perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
                 </a>
               </p>
               <h3>
@@ -139,7 +147,7 @@
               </div>
               <p class="paragraf-unstyle">
                 <a href="#">
-                  <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </a>
               </p>
               <h3>
@@ -160,7 +168,7 @@
               </div>
               <p class="paragraf-unstyle">
                 <a href="#">
-                  <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                  <img src="img/perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </a>
               </p>
               <h3>
@@ -181,14 +189,15 @@
               </div>
               <p class="paragraf-unstyle">
                 <a href="#">
-                  <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                  <img src="img/perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </a>
               </p>
               <h3>
-                <a class="tool-name no-discount" href="#">
+                <a class="tool-name" href="#">
                    Перфоратор BOSCH BFG 2000
                 </a>
               </h3>
+              <p class="old-price"><span class="empty-price"></span></p>
               <p class="new-price">12500 Р.</p>
               <div class="actions">
                 <button class="buy" type="button">Купить</button>
@@ -205,12 +214,12 @@
           <ul class="brands-list list-unstyle">
             <li><a class="brands" href="#"><img src="img/bosch-logo.png" width="126" height="37" alt="Логотип компании Bosch"><span class="visually-hidden">Bosch</span></a></li>
             <li><a class="brands" href="#"><img src="img/makita-logo.png" width="123" height="40" alt="Логотип компании Makita"><span class="visually-hidden">Makita</span></a></li>
-            <li><a class="brands" href="#"><img src="img/DeWALT-logo.png" width="146" height="44" alt="Логотип компании DeWALT"><span class="visually-hidden">DeWalt</span></a></li>
+            <li><a class="brands" href="#"><img src="img/dewalt-logo.png" width="146" height="44" alt="Логотип компании DeWALT"><span class="visually-hidden">DeWalt</span></a></li>
             <li><a class="brands" href="#"><img src="img/interskol-logo.png" width="200" height="88" alt="Логотип компании Интерскол"><span class="visually-hidden">Интерскол</span></a></li>
-            <li><a class="brands" href="#"><img src="img/Hitachi-logo.png" width="169" height="31" alt="Логотип компании Hitachi"><span class="visually-hidden">Hitachi</span></a></li>
-            <li><a class="brands" href="#"><img src="img/LG-logo.png" width="121" height="73" alt="Логотип компании LG"><span class="visually-hidden">LG</span></a></li>
-            <li><a class="brands" href="#"><img src="img/AEG-logo.png" width="151" height="96" alt="Логотип компании AEG"><span class="visually-hidden">AEG</span></a></li>
-            <li><a class="brands" href="#"><img src="img/Metabo-logo.png" width="204" height="69" alt="Логотип компании Metabo"><span class="visually-hidden">Metabo</span></a></li>
+            <li><a class="brands" href="#"><img src="img/hitachi-logo.png" width="169" height="31" alt="Логотип компании Hitachi"><span class="visually-hidden">Hitachi</span></a></li>
+            <li><a class="brands" href="#"><img src="img/lg-logo.png" width="121" height="73" alt="Логотип компании LG"><span class="visually-hidden">LG</span></a></li>
+            <li><a class="brands" href="#"><img src="img/aeg-logo.png" width="151" height="96" alt="Логотип компании AEG"><span class="visually-hidden">AEG</span></a></li>
+            <li><a class="brands" href="#"><img src="img/metabo-logo.png" width="204" height="69" alt="Логотип компании Metabo"><span class="visually-hidden">Metabo</span></a></li>
           </ul>
         </section>
       </div>
@@ -230,15 +239,15 @@
             <div class="services-content services-delivry">
               <h3 class="services-heading">Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
+              к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
             </div>
             <div class="services-content services-garantie">
               <h3 class="services-heading">Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит,<br>
-              а также в случае пожара, спровоцированного его возгоранием,<br>
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+              а также в случае пожара, спровоцированного его возгоранием,
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем
               сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.</p>
             </div>
@@ -256,7 +265,7 @@
           <h2>Компания «Техномарт»</h2>
           <p class="first-paragraf">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
              строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          <p class="second-paragraf">Мы можем доставить ваш товар в самые отдаленные точки России!
              Техномарт работает со многими транспортными компаниями: </p>
           <ul class="list-unstyle">
             <li class="delivery">Деловые линии</li>
@@ -281,7 +290,7 @@
       <div class="upper-footer">
         <div class="footer-wrapper">
           <div class="footer-between">
-            <a class="footer-logo" href="index.html"><img src="img/logo.png"  width="136" height="21" alt="Логотип магазина «Техномарт»"></a>
+            <a class="footer-logo" href="#"><img src="img/logo.png"  width="136" height="21" alt="Логотип магазина «Техномарт»"></a>
             <ul class="list-unstyle footer-menu">
               <li class="footer-link"><a href="#">Компания</a></li>
               <li class="footer-link"><a href="#">Новости</a></li>
@@ -292,7 +301,7 @@
           </div>
           <div class="footer-between">
             <div class="footer-adress">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
             </div>
             <ul class="list-unstyle footer-offers">
               <li class="footer-offer"><a href="#">Материалы</a></li>
@@ -315,11 +324,11 @@
             </ul>
             <div class="developers">
               <p class="developer">
-                Обратная связь:<br>
+                Обратная связь:
                 <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </p>
-              <p class="developer">
-                Разработано —<br>
+              <p class="developer academy-link">
+                Разработано —
                 <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
               </p>
             </div>
@@ -359,5 +368,16 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </div>
+    <div class="popup cart-popup visually-hidden">
+      <p>Товар добавлен в корзину!</p>
+      <div class="popup-buttons">
+        <button class="button" type="button">Оформить заказ</button>
+        <button class="button more-button" type="button">Продолжить покупки</button>
+      </div>
+      <button class="popup-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
